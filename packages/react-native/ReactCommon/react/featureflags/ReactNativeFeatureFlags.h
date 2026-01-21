@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<94420e56d4980f03465c949a42cb6062>>
+ * @generated SignedSource<<66c8c46d66dde5eb2fd19a67459c83af>>
  */
 
 /**
@@ -335,11 +335,6 @@ class ReactNativeFeatureFlags {
   RN_EXPORT static bool overrideBySynchronousMountPropsAtMountingAndroid();
 
   /**
-   * When enabled, ReactSwipeRefreshLayout will forward ACTION_SCROLL events to its child for proper handling.
-   */
-  RN_EXPORT static bool passScrollToSwipeRefreshChild();
-
-  /**
    * Enable reporting Performance Issues (`detail.devtools.performanceIssue`). Displayed in the V2 Performance Monitor and the "Performance Issues" sub-panel in DevTools.
    */
   RN_EXPORT static bool perfIssuesEnabled();
@@ -398,11 +393,6 @@ class ReactNativeFeatureFlags {
    * When enabled, the native view configs are used in bridgeless mode.
    */
   RN_EXPORT static bool useNativeViewConfigsInBridgelessMode();
-
-  /**
-   * Use the state stored on the source shadow node when cloning it instead of reading in the most recent state on the shadow node family.
-   */
-  RN_EXPORT static bool useShadowNodeStateOnClone();
 
   /**
    * Use shared animation backend in C++ Animated

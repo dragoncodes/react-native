@@ -388,6 +388,14 @@ export type ScrollViewPropsAndroid = Readonly<{
    * @platform android
    */
   fadingEdgeLength?: ?number | {start: number, end: number},
+  /**
+   * When false, the ScrollView will not automatically scroll to a focused child when
+   * the child requests focus. This can be useful when you want to control the scroll
+   * position programmatically. The default value is true.
+   *
+   * @platform android
+   */
+  scrollsChildToFocus?: ?boolean,
 }>;
 
 type StickyHeaderComponentType = component(
@@ -1850,6 +1858,8 @@ class ScrollView extends React.Component<ScrollViewProps, ScrollViewState> {
           {style: StyleSheet.compose(baseStyle, outer)},
           <NativeScrollView
             {...props}
+            // Nested scroll should always be enabled to allow the child scroll view to handle events before passing them to the refresh control parent
+            nestedScrollEnabled={props.nestedScrollEnabled ?? true}
             style={StyleSheet.compose(baseStyle, inner)}
             // $FlowFixMe[incompatible-type] - Flow only knows element refs.
             ref={scrollViewRef}>

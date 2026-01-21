@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<9ac153a95e55474403a3d4c47ff7c484>>
+ * @generated SignedSource<<046cb410368bfb2d3ba6ed3364376f28>>
  */
 
 /**
@@ -263,10 +263,6 @@ class ReactNativeFeatureFlagsDefaults : public ReactNativeFeatureFlagsProvider {
     return false;
   }
 
-  bool passScrollToSwipeRefreshChild() override {
-    return false;
-  }
-
   bool perfIssuesEnabled() override {
     return false;
   }
@@ -313,10 +309,6 @@ class ReactNativeFeatureFlagsDefaults : public ReactNativeFeatureFlagsProvider {
 
   bool useNativeViewConfigsInBridgelessMode() override {
     return false;
-  }
-
-  bool useShadowNodeStateOnClone() override {
-    return true;
   }
 
   bool useSharedAnimatedBackend() override {

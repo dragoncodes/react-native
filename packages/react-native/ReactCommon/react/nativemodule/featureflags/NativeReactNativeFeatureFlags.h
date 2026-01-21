@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<773acdacdd2ef30df0ebda67d1c455ab>>
+ * @generated SignedSource<<6d28ea5d159f53988ca76188bc2fa5c0>>
  */
 
 /**
@@ -154,8 +154,6 @@ class NativeReactNativeFeatureFlags
 
   bool overrideBySynchronousMountPropsAtMountingAndroid(jsi::Runtime& runtime);
 
-  bool passScrollToSwipeRefreshChild(jsi::Runtime& runtime);
-
   bool perfIssuesEnabled(jsi::Runtime& runtime);
 
   bool perfMonitorV2Enabled(jsi::Runtime& runtime);
@@ -179,8 +177,6 @@ class NativeReactNativeFeatureFlags
   bool useFabricInterop(jsi::Runtime& runtime);
 
   bool useNativeViewConfigsInBridgelessMode(jsi::Runtime& runtime);
-
-  bool useShadowNodeStateOnClone(jsi::Runtime& runtime);
 
   bool useSharedAnimatedBackend(jsi::Runtime& runtime);
 

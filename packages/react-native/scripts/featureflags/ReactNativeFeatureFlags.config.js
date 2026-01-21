@@ -679,17 +679,6 @@ const definitions: FeatureFlagDefinitions = {
       },
       ossReleaseStage: 'none',
     },
-    passScrollToSwipeRefreshChild: {
-      defaultValue: false,
-      metadata: {
-        dateAdded: '2026-01-13',
-        description:
-          'When enabled, ReactSwipeRefreshLayout will forward ACTION_SCROLL events to its child for proper handling.',
-        expectedReleaseValue: true,
-        purpose: 'experimentation',
-      },
-      ossReleaseStage: 'none',
-    },
     perfIssuesEnabled: {
       defaultValue: false,
       metadata: {
@@ -816,17 +805,6 @@ const definitions: FeatureFlagDefinitions = {
         purpose: 'experimentation',
       },
       ossReleaseStage: 'canary',
-    },
-    useShadowNodeStateOnClone: {
-      defaultValue: true,
-      metadata: {
-        dateAdded: '2025-04-16',
-        description:
-          'Use the state stored on the source shadow node when cloning it instead of reading in the most recent state on the shadow node family.',
-        expectedReleaseValue: true,
-        purpose: 'experimentation',
-      },
-      ossReleaseStage: 'stable',
     },
     useSharedAnimatedBackend: {
       defaultValue: false,

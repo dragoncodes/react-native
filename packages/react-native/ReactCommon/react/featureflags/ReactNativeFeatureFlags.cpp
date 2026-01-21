@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<fa1074c6da1ee0be0ba9160e63f8958f>>
+ * @generated SignedSource<<e197fcc2185d8f75ff6d355c27975bd4>>
  */
 
 /**
@@ -262,10 +262,6 @@ bool ReactNativeFeatureFlags::overrideBySynchronousMountPropsAtMountingAndroid()
   return getAccessor().overrideBySynchronousMountPropsAtMountingAndroid();
 }
 
-bool ReactNativeFeatureFlags::passScrollToSwipeRefreshChild() {
-  return getAccessor().passScrollToSwipeRefreshChild();
-}
-
 bool ReactNativeFeatureFlags::perfIssuesEnabled() {
   return getAccessor().perfIssuesEnabled();
 }
@@ -312,10 +308,6 @@ bool ReactNativeFeatureFlags::useFabricInterop() {
 
 bool ReactNativeFeatureFlags::useNativeViewConfigsInBridgelessMode() {
   return getAccessor().useNativeViewConfigsInBridgelessMode();
-}
-
-bool ReactNativeFeatureFlags::useShadowNodeStateOnClone() {
-  return getAccessor().useShadowNodeStateOnClone();
 }
 
 bool ReactNativeFeatureFlags::useSharedAnimatedBackend() {

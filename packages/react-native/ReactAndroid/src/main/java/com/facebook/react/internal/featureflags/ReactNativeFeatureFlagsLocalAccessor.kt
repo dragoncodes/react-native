@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<45b7473c077eb6fd4c2b46712962ddbd>>
+ * @generated SignedSource<<1403b30f4dc3d18f39303d91d6824bda>>
  */
 
 /**
@@ -83,7 +83,6 @@ internal class ReactNativeFeatureFlagsLocalAccessor : ReactNativeFeatureFlagsAcc
   private var fuseboxNetworkInspectionEnabledCache: Boolean? = null
   private var hideOffscreenVirtualViewsOnIOSCache: Boolean? = null
   private var overrideBySynchronousMountPropsAtMountingAndroidCache: Boolean? = null
-  private var passScrollToSwipeRefreshChildCache: Boolean? = null
   private var perfIssuesEnabledCache: Boolean? = null
   private var perfMonitorV2EnabledCache: Boolean? = null
   private var preparedTextCacheSizeCache: Double? = null
@@ -96,7 +95,6 @@ internal class ReactNativeFeatureFlagsLocalAccessor : ReactNativeFeatureFlagsAcc
   private var useAlwaysAvailableJSErrorHandlingCache: Boolean? = null
   private var useFabricInteropCache: Boolean? = null
   private var useNativeViewConfigsInBridgelessModeCache: Boolean? = null
-  private var useShadowNodeStateOnCloneCache: Boolean? = null
   private var useSharedAnimatedBackendCache: Boolean? = null
   private var useTraitHiddenOnAndroidCache: Boolean? = null
   private var useTurboModuleInteropCache: Boolean? = null
@@ -694,16 +692,6 @@ internal class ReactNativeFeatureFlagsLocalAccessor : ReactNativeFeatureFlagsAcc
     return cached
   }
 
-  override fun passScrollToSwipeRefreshChild(): Boolean {
-    var cached = passScrollToSwipeRefreshChildCache
-    if (cached == null) {
-      cached = currentProvider.passScrollToSwipeRefreshChild()
-      accessedFeatureFlags.add("passScrollToSwipeRefreshChild")
-      passScrollToSwipeRefreshChildCache = cached
-    }
-    return cached
-  }
-
   override fun perfIssuesEnabled(): Boolean {
     var cached = perfIssuesEnabledCache
     if (cached == null) {
@@ -820,16 +808,6 @@ internal class ReactNativeFeatureFlagsLocalAccessor : ReactNativeFeatureFlagsAcc
       cached = currentProvider.useNativeViewConfigsInBridgelessMode()
       accessedFeatureFlags.add("useNativeViewConfigsInBridgelessMode")
       useNativeViewConfigsInBridgelessModeCache = cached
-    }
-    return cached
-  }
-
-  override fun useShadowNodeStateOnClone(): Boolean {
-    var cached = useShadowNodeStateOnCloneCache
-    if (cached == null) {
-      cached = currentProvider.useShadowNodeStateOnClone()
-      accessedFeatureFlags.add("useShadowNodeStateOnClone")
-      useShadowNodeStateOnCloneCache = cached
     }
     return cached
   }

@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<d50ebf5805d13b4da427ce1318c6cabc>>
+ * @generated SignedSource<<ad478388cb9a64690c71fe8fa06c1c79>>
  */
 
 /**
@@ -141,8 +141,6 @@ public interface ReactNativeFeatureFlagsProvider {
 
   @DoNotStrip public fun overrideBySynchronousMountPropsAtMountingAndroid(): Boolean
 
-  @DoNotStrip public fun passScrollToSwipeRefreshChild(): Boolean
-
   @DoNotStrip public fun perfIssuesEnabled(): Boolean
 
   @DoNotStrip public fun perfMonitorV2Enabled(): Boolean
@@ -166,8 +164,6 @@ public interface ReactNativeFeatureFlagsProvider {
   @DoNotStrip public fun useFabricInterop(): Boolean
 
   @DoNotStrip public fun useNativeViewConfigsInBridgelessMode(): Boolean
-
-  @DoNotStrip public fun useShadowNodeStateOnClone(): Boolean
 
   @DoNotStrip public fun useSharedAnimatedBackend(): Boolean
 

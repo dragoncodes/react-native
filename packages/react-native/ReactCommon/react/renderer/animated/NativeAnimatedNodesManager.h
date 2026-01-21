@@ -18,6 +18,7 @@
 #include <react/renderer/animated/EventEmitterListener.h>
 #include <react/renderer/animated/event_drivers/EventAnimationDriver.h>
 #ifdef RN_USE_ANIMATION_BACKEND
+#include <react/renderer/animationbackend/AnimatedPropsBuilder.h>
 #include <react/renderer/animationbackend/AnimationBackend.h>
 #endif
 #include <react/renderer/core/ReactPrimitives.h>
@@ -126,8 +127,8 @@ class NativeAnimatedNodesManager {
       AnimationMutations &mutations,
       AnimatedPropsBuilder &propsBuilder,
       bool hasLayoutUpdates = false);
-  AnimationMutations onAnimationFrameForBackend(AnimatedPropsBuilder &propsBuilder, double timestamp);
-  AnimationMutations pullAnimationMutations();
+  AnimationMutations onAnimationFrameForBackend(AnimatedPropsBuilder &propsBuilder, AnimationTimestamp timestamp);
+  AnimationMutations pullAnimationMutations(AnimationTimestamp timestamp);
 #endif
 
 #pragma mark - Drivers
@@ -283,6 +284,10 @@ class NativeAnimatedNodesManager {
   int animatedGraphBFSColor_ = 0;
 #ifdef REACT_NATIVE_DEBUG
   bool warnedAboutGraphTraversal_ = false;
+#endif
+
+#ifdef RN_USE_ANIMATION_BACKEND
+  CallbackId animationBackendCallbackId_{0};
 #endif
 
   friend class ColorAnimatedNode;

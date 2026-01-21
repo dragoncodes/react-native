@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<77d79172d377c62d4d26ddd16dab56ec>>
+ * @generated SignedSource<<288cffd334fdaebf18b1bede7bb907c8>>
  */
 
 /**
@@ -393,12 +393,6 @@ class ReactNativeFeatureFlagsJavaProvider
     return method(javaProvider_);
   }
 
-  bool passScrollToSwipeRefreshChild() override {
-    static const auto method =
-        getReactNativeFeatureFlagsProviderJavaClass()->getMethod<jboolean()>("passScrollToSwipeRefreshChild");
-    return method(javaProvider_);
-  }
-
   bool perfIssuesEnabled() override {
     static const auto method =
         getReactNativeFeatureFlagsProviderJavaClass()->getMethod<jboolean()>("perfIssuesEnabled");
@@ -468,12 +462,6 @@ class ReactNativeFeatureFlagsJavaProvider
   bool useNativeViewConfigsInBridgelessMode() override {
     static const auto method =
         getReactNativeFeatureFlagsProviderJavaClass()->getMethod<jboolean()>("useNativeViewConfigsInBridgelessMode");
-    return method(javaProvider_);
-  }
-
-  bool useShadowNodeStateOnClone() override {
-    static const auto method =
-        getReactNativeFeatureFlagsProviderJavaClass()->getMethod<jboolean()>("useShadowNodeStateOnClone");
     return method(javaProvider_);
   }
 
@@ -812,11 +800,6 @@ bool JReactNativeFeatureFlagsCxxInterop::overrideBySynchronousMountPropsAtMounti
   return ReactNativeFeatureFlags::overrideBySynchronousMountPropsAtMountingAndroid();
 }
 
-bool JReactNativeFeatureFlagsCxxInterop::passScrollToSwipeRefreshChild(
-    facebook::jni::alias_ref<JReactNativeFeatureFlagsCxxInterop> /*unused*/) {
-  return ReactNativeFeatureFlags::passScrollToSwipeRefreshChild();
-}
-
 bool JReactNativeFeatureFlagsCxxInterop::perfIssuesEnabled(
     facebook::jni::alias_ref<JReactNativeFeatureFlagsCxxInterop> /*unused*/) {
   return ReactNativeFeatureFlags::perfIssuesEnabled();
@@ -875,11 +858,6 @@ bool JReactNativeFeatureFlagsCxxInterop::useFabricInterop(
 bool JReactNativeFeatureFlagsCxxInterop::useNativeViewConfigsInBridgelessMode(
     facebook::jni::alias_ref<JReactNativeFeatureFlagsCxxInterop> /*unused*/) {
   return ReactNativeFeatureFlags::useNativeViewConfigsInBridgelessMode();
-}
-
-bool JReactNativeFeatureFlagsCxxInterop::useShadowNodeStateOnClone(
-    facebook::jni::alias_ref<JReactNativeFeatureFlagsCxxInterop> /*unused*/) {
-  return ReactNativeFeatureFlags::useShadowNodeStateOnClone();
 }
 
 bool JReactNativeFeatureFlagsCxxInterop::useSharedAnimatedBackend(
@@ -1121,9 +1099,6 @@ void JReactNativeFeatureFlagsCxxInterop::registerNatives() {
         "overrideBySynchronousMountPropsAtMountingAndroid",
         JReactNativeFeatureFlagsCxxInterop::overrideBySynchronousMountPropsAtMountingAndroid),
       makeNativeMethod(
-        "passScrollToSwipeRefreshChild",
-        JReactNativeFeatureFlagsCxxInterop::passScrollToSwipeRefreshChild),
-      makeNativeMethod(
         "perfIssuesEnabled",
         JReactNativeFeatureFlagsCxxInterop::perfIssuesEnabled),
       makeNativeMethod(
@@ -1159,9 +1134,6 @@ void JReactNativeFeatureFlagsCxxInterop::registerNatives() {
       makeNativeMethod(
         "useNativeViewConfigsInBridgelessMode",
         JReactNativeFeatureFlagsCxxInterop::useNativeViewConfigsInBridgelessMode),
-      makeNativeMethod(
-        "useShadowNodeStateOnClone",
-        JReactNativeFeatureFlagsCxxInterop::useShadowNodeStateOnClone),
       makeNativeMethod(
         "useSharedAnimatedBackend",
         JReactNativeFeatureFlagsCxxInterop::useSharedAnimatedBackend),

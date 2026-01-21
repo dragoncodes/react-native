@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<33102350b43b6c51283a5480dcac28ca>>
+ * @generated SignedSource<<dfb0bf3222991d38f586e0d218e064f4>>
  */
 
 /**
@@ -339,11 +339,6 @@ bool NativeReactNativeFeatureFlags::overrideBySynchronousMountPropsAtMountingAnd
   return ReactNativeFeatureFlags::overrideBySynchronousMountPropsAtMountingAndroid();
 }
 
-bool NativeReactNativeFeatureFlags::passScrollToSwipeRefreshChild(
-    jsi::Runtime& /*runtime*/) {
-  return ReactNativeFeatureFlags::passScrollToSwipeRefreshChild();
-}
-
 bool NativeReactNativeFeatureFlags::perfIssuesEnabled(
     jsi::Runtime& /*runtime*/) {
   return ReactNativeFeatureFlags::perfIssuesEnabled();
@@ -402,11 +397,6 @@ bool NativeReactNativeFeatureFlags::useFabricInterop(
 bool NativeReactNativeFeatureFlags::useNativeViewConfigsInBridgelessMode(
     jsi::Runtime& /*runtime*/) {
   return ReactNativeFeatureFlags::useNativeViewConfigsInBridgelessMode();
-}
-
-bool NativeReactNativeFeatureFlags::useShadowNodeStateOnClone(
-    jsi::Runtime& /*runtime*/) {
-  return ReactNativeFeatureFlags::useShadowNodeStateOnClone();
 }
 
 bool NativeReactNativeFeatureFlags::useSharedAnimatedBackend(

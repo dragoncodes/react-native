@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<0984597008f53b23ba0f5ee0fcad0996>>
+ * @generated SignedSource<<b04b2269efaa4394985f1e90b5761bb2>>
  */
 
 /**
@@ -576,15 +576,6 @@ class ReactNativeFeatureFlagsDynamicProvider : public ReactNativeFeatureFlagsDef
     return ReactNativeFeatureFlagsDefaults::overrideBySynchronousMountPropsAtMountingAndroid();
   }
 
-  bool passScrollToSwipeRefreshChild() override {
-    auto value = values_["passScrollToSwipeRefreshChild"];
-    if (!value.isNull()) {
-      return value.getBool();
-    }
-
-    return ReactNativeFeatureFlagsDefaults::passScrollToSwipeRefreshChild();
-  }
-
   bool perfIssuesEnabled() override {
     auto value = values_["perfIssuesEnabled"];
     if (!value.isNull()) {
@@ -691,15 +682,6 @@ class ReactNativeFeatureFlagsDynamicProvider : public ReactNativeFeatureFlagsDef
     }
 
     return ReactNativeFeatureFlagsDefaults::useNativeViewConfigsInBridgelessMode();
-  }
-
-  bool useShadowNodeStateOnClone() override {
-    auto value = values_["useShadowNodeStateOnClone"];
-    if (!value.isNull()) {
-      return value.getBool();
-    }
-
-    return ReactNativeFeatureFlagsDefaults::useShadowNodeStateOnClone();
   }
 
   bool useSharedAnimatedBackend() override {
